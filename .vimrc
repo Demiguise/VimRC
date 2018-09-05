@@ -16,6 +16,7 @@ set encoding=utf8
 syntax enable
 set background=dark
 colorscheme solarized
+let g:airline_solarized_bg='dark'
 
 " Highlight the cursors line
 set cursorline
