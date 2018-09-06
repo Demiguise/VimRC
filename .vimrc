@@ -51,6 +51,13 @@ set wildmenu
 " This alleviates problems with "Press ENTER or type command to continue" messages sometimes.
 set shortmess=a
 
+" Remove the startup screen
+set shortmess+=I
+
+" Eliminate files which clutter git status
+set nobackup
+set noswapfile
+
 """""""""""""""""""
 
 " Mappings
