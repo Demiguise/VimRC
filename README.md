@@ -10,3 +10,6 @@
 * vim-fugitive
 * vim-rooter
 * vim-gitgutter
+* vim-commentary
+* ctrlp
+* vim-autotag

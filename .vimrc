@@ -1,6 +1,9 @@
 " Don't pretend to be VI
 set nocompatible
 
+" Setup language
+set langmenu=en_GB
+
 " Enable pathogen plugin management
 execute pathogen#infect()
 
@@ -11,6 +14,10 @@ execute pathogen#infect()
 """""""""""""""""""
 
 set encoding=utf8
+
+" Set default sizes
+set lines=50
+set columns=180
 
 " General visuals
 syntax enable
@@ -58,5 +65,5 @@ map <F2> :NERDTreeToggle<CR>
 
 """""""""""""""""""
 
-" On entering a new buffer, set the working directory to the project root
-autocmd BufEnter * :Rooter
+" Automatically open vim in maximised mode
+au GUIEnter * simalt ~x
