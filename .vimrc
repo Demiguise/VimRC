@@ -58,6 +58,41 @@ set shortmess+=I
 set nobackup
 set noswapfile
 
+" Auto read files that have changed
+set autoread
+
+" Stop the noises
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+"""""""""""""""""""
+
+" Ctrlp
+
+"""""""""""""""""""
+
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\',
+    \ 'file': '\.exe$\|\.obj$\|\.dll$\' }
+
+
+"""""""""""""""""""
+
+" syntastic
+
+"""""""""""""""""""
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 """""""""""""""""""
 
 " Mappings
