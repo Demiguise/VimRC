@@ -2,6 +2,7 @@
 set nocompatible
 
 source ~/vimfiles/editor.vim
+source ~/vimfiles/local.vim
 source ~/vimfiles/plugins.vim
 source ~/vimfiles/bindings.vim
 

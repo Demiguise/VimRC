@@ -62,5 +62,3 @@ set tm=500
 " Ignore casing and be clever about it
 set ignorecase
 set smartcase
-
-let g:python3_host_prog="C:/Users/andyc/AppData/Local/Programs/Python/Python37-32/python.exe"
