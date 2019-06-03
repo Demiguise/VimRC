@@ -13,6 +13,9 @@ set columns=180
 " General visuals
 syntax enable
 
+" Allow for local .vimrcs to be loaded
+set exrc
+
 " Highlight the cursors line
 set cursorline
 
@@ -25,8 +28,12 @@ set mat=2
 set relativenumber
 set number
 
+"" Map leader to ,
+let mapleader=','
+
 " Allows us to share clipboards between OS and Vim
-:set clipboard=unnamedplus
+" (Seems to be broken for the moment)
+":set clipboard+=unnamedplus
 
 " Indent settings
 set autoindent
@@ -51,5 +58,9 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
+
+" Ignore casing and be clever about it
+set ignorecase
+set smartcase
 
 let g:python3_host_prog="C:/Users/andyc/AppData/Local/Programs/Python/Python37-32/python.exe"

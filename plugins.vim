@@ -30,10 +30,16 @@ let g:airline_theme='solarized'
 let g:deoplete#enable_at_startup=1
 call deoplete#custom#source('LanguageClient', 'min_pattern_length', 2)
 
+" Disable the candidates in Comment/String syntaxes. 
+call deoplete#custom#source('_', 'disabled_syntaxes', ['Comment', 'String'])
+
 """""""""""""""""""
 " Language Client
 """""""""""""""""""
 let g:LanguageClient_serverCommands = {'cpp': ['clangd', '-background-index'], 'c': ['clangd', '-background-index']}
+let g:LanguageClient_windowLogMessageLevel = "Log"
+let g:LanguageClient_LoggingFile = expand('~/vimfiles/languageclient.log')
+nnoremap <silent> <F2> :call LanguageClient#textDocument_definition()<CR>
 
 """""""""""""""""""
 " CtrlP
