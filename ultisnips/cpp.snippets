@@ -1,0 +1,24 @@
+snippet inc
+#include "$1.h"
+endsnippet
+
+snippet once
+#ifndef __$1_H__
+#define __$1_H__
+
+#endif //~__$1_H__
+endsnippet
+
+snippet if
+if ($1)
+{
+	$2
+}
+endsnippet
+
+snippet func
+${1:void} $2($3)
+{
+	$4
+}
+endsnippet

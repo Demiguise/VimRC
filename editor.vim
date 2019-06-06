@@ -33,7 +33,7 @@ let mapleader=','
 
 " Allows us to share clipboards between OS and Vim
 " (Seems to be broken for the moment)
-":set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 
 " Indent settings
 set autoindent
@@ -41,6 +41,8 @@ set shiftwidth=4
 set smartindent
 set smarttab
 set softtabstop=4
+set tabstop=4
+set expandtab
 
 " Set any messages we get from VIM to be short.
 " This alleviates problems with "Press ENTER or type command to continue" messages sometimes.

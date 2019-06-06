@@ -17,6 +17,8 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+inoremap jk <ESC>
+
 """""""""""""""""""
 " Git Fugitive
 """""""""""""""""""
